@@ -1,0 +1,468 @@
+{
+ "generado": "2026-10-10T04:36:24.227Z",
+ "contrato": "0x931e92fe62310bc67ffe016c3c8f55afd31f7c69",
+ "red": "Ink Sepolia (chain 763373)",
+ "explorador": "https://explorer-sepolia.inkonchain.com",
+ "resumen": {
+  "permisos": 27,
+  "comprasCompletadas": 6,
+  "viaKwal": 1,
+  "viaReap": 5,
+  "transaccionesEnCadena": 40,
+  "decisionesDePolitica": 2,
+  "bloqueosPorRegla": 2,
+  "bloqueosDelContrato": 0
+ },
+ "completadas": [
+  {
+   "fecha": "2026-10-10T02:32:42.359Z",
+   "permiso": "Prueba de tienda (Linsoul)",
+   "financiador": "Aseguradora Demo",
+   "producto": "7HZ Salnotes Zero",
+   "tienda": "linsoul.com",
+   "monto": 31.99,
+   "moneda": "USD",
+   "orden": "ord_01M4HTD1DAY48KD8E0YCTPB05Y",
+   "via": "Reap Agentic checkout",
+   "reciboHash": "0x8b057cd62b7641145206863727d339c7770dd34357860acb0daf5c504016087f",
+   "tx": "0x3677e7cc389f4e1e4a58de47beb0d423b62a69906b713410b04431fff038be79"
+  },
+  {
+   "fecha": "2026-10-10T03:51:21.373Z",
+   "permiso": "Fondo co-op Q4 · Distribuidora Bajío",
+   "financiador": "Marca Demo",
+   "producto": "It Girl Sticker Pack",
+   "tienda": "evryjewels.com",
+   "monto": 3.95,
+   "moneda": "USD",
+   "orden": null,
+   "via": "Kwal (bóveda, sin aprobación humana)",
+   "reciboHash": "0xfe2b541c15054bbc8b41bff3dd3b9ef7a70eb87ad395a7a8434e95f3c954f559",
+   "tx": "0x5b2386cd5696917b02f1179129ecb1c11677a23e96e3a1805fbae4d624b95188"
+  },
+  {
+   "fecha": "2026-10-10T04:01:29.003Z",
+   "permiso": "Reposición de audífonos robados",
+   "financiador": "Aseguradora Demo",
+   "producto": "7HZ Salnotes Zero",
+   "tienda": "linsoul.com",
+   "monto": 31.99,
+   "moneda": "USD",
+   "orden": "ord_01M4HZGNMM3JQBB6X8KN5TJ5DX",
+   "via": "Reap Agentic checkout",
+   "reciboHash": "0xb960f39efedae41d13f1fdba1888e642644044c3bd9b509a55d7f9b44c803500",
+   "tx": "0x3f2e8822b372e406c8532d3fa38dcdcc2459ff401099aa1ebe4d994052b3e083"
+  },
+  {
+   "fecha": "2026-10-10T04:01:44.661Z",
+   "permiso": "Reposición de audífonos robados",
+   "financiador": "Aseguradora Demo",
+   "producto": "7HZ Salnotes Zero",
+   "tienda": "linsoul.com",
+   "monto": 31.99,
+   "moneda": "USD",
+   "orden": "ord_01M4HZGSA0WMKGBCMQWGJG5PE8",
+   "via": "Reap Agentic checkout",
+   "reciboHash": "0x10735a6d9a54a6cf8c722d443f5c6fe8a746a4801ad829dc5445bf71c7f0812c",
+   "tx": null
+  },
+  {
+   "fecha": "2026-10-10T04:02:06.624Z",
+   "permiso": "Reposición de audífonos robados",
+   "financiador": "Aseguradora Demo",
+   "producto": "7HZ Salnotes Zero",
+   "tienda": "linsoul.com",
+   "monto": 31.99,
+   "moneda": "USD",
+   "orden": "ord_01M4HZGXBHFZ1ENW4S8W8M68GG",
+   "via": "Reap Agentic checkout",
+   "reciboHash": "0x979a5ad08a435c4c6840f3b1422527842f2aedbaec7106350b7463d9c3b32758",
+   "tx": null
+  },
+  {
+   "fecha": "2026-10-10T04:21:51.261Z",
+   "permiso": "Reposición de audífonos (prueba)",
+   "financiador": "Aseguradora Demo",
+   "producto": "Moondrop Edge",
+   "tienda": "linsoul.com",
+   "monto": 95.99,
+   "moneda": "USD",
+   "orden": "ord_01M4J0NE8A6NACPKPHM14WBG0K",
+   "via": "Reap Agentic checkout",
+   "reciboHash": "0x25a36b84d71683cd35642d3b2f0d4e5d4325b02fb886426550925c368a3f60e9",
+   "tx": null
+  }
+ ],
+ "distribuidores": [
+  {
+   "socio": "Distribuidora Norte",
+   "tope": 10,
+   "boveda": "0xe1130b1Ea4F89Ccd63AD91c1B8a8fce35094901c",
+   "txFondeo": "0x2228c83d6ad65a5f06aba6641460eedf60ea1262c19e3ae593d66873b8f363e3",
+   "compras": [
+    {
+     "estado": "FAILED",
+     "monto": 8.67,
+     "producto": "PBTfans WOB Keycap Set Doubleshot PBT",
+     "tx": null
+    },
+    {
+     "estado": "FAILED",
+     "monto": 4.23,
+     "producto": "It Girl Sticker Pack",
+     "tx": null
+    }
+   ]
+  },
+  {
+   "socio": "Distribuidora Sur",
+   "tope": 10,
+   "boveda": "0x0E219393D6Fc22F6e3184400Fa260dE79E9c3CE2",
+   "txFondeo": "0x2c264968a81dc08706f2c7f8eb75bef0cfa09df8a584935a888d109fb13a11f2",
+   "compras": [
+    {
+     "estado": "FAILED",
+     "monto": 0.76,
+     "producto": "PBTfans 1984 Keycaps",
+     "tx": null
+    },
+    {
+     "estado": "FAILED",
+     "monto": 4.2,
+     "producto": "It Girl Sticker Pack",
+     "tx": "0xe436c7247b6c726d664aac0f89dd7214404d2f69572b134b36944331825ea01f"
+    }
+   ]
+  },
+  {
+   "socio": "Distribuidora Bajío",
+   "tope": 10,
+   "boveda": "0x8F0D95Ef487C0cA0717ce36c21F2d79a37FD9310",
+   "txFondeo": "0x4e57597bc66394d120a4ae31d24f8850b3a64a549af0c24c22bab6aaea60682a",
+   "compras": [
+    {
+     "estado": "FAILED",
+     "monto": 0.79,
+     "producto": "PBTfans 1984 Keycaps",
+     "tx": null
+    },
+    {
+     "estado": "COMPLETED",
+     "monto": 3.95,
+     "producto": "It Girl Sticker Pack",
+     "tx": "0x5b2386cd5696917b02f1179129ecb1c11677a23e96e3a1805fbae4d624b95188"
+    }
+   ]
+  }
+ ],
+ "transacciones": [
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0xec1103e0bfc213596f16d65e07495c440582d2a0aab2aa57d8e8699140860f38",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T02:26:20.221Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x5da279b8179a4ef405cf14f5dbd434de609abd7622feb57ec9ed7b300be4d1ed",
+   "permiso": "Fondo co-op Q4 · Distribuidora Norte",
+   "detalle": "1.5 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T02:27:11.880Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0xfe75752b1af628b15a3669e38bb06f3493f1f975d52a792fbfc1b9e129c81043",
+   "permiso": "Prueba de tienda (Linsoul)",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T02:31:01.440Z"
+  },
+  {
+   "tipo": "Liberación exacta al completarse la compra",
+   "tx": "0x49e2fd561500b32c2e520ff51883c6616dd74d04cb0fd76607eb74a3ce573af3",
+   "permiso": "Prueba de tienda (Linsoul)",
+   "detalle": "31.99 USD",
+   "ts": "2026-10-10T02:32:40.944Z"
+  },
+  {
+   "tipo": "Recibo registrado en la cadena",
+   "tx": "0x3677e7cc389f4e1e4a58de47beb0d423b62a69906b713410b04431fff038be79",
+   "permiso": "Prueba de tienda (Linsoul)",
+   "detalle": "huella 0x8b057cd62b764114…",
+   "ts": "2026-10-10T02:32:42.359Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0xc9d601ce75b32e606fd7375ebcc08e4577bcb09c73a6a6120fae4c2137da8536",
+   "permiso": "Prueba A",
+   "detalle": "0.8 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:02:56.220Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x21c92387d6e1cef06ea6bc146f0af58025854db0e19540b7f69128d75320d4a3",
+   "permiso": "Prueba B",
+   "detalle": "0.6 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:03:43.422Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0xf7be14cb2123cdf2b06f2f73d4be0178915da01e08cbb18189ccba43969457b6",
+   "permiso": "Prueba C",
+   "detalle": "0.4 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:03:59.699Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x00c6edac1362a6e8d3d6fc7879e95bc1fcc70fea20ea9d63aca349f155d05bf1",
+   "permiso": "Reposición de audífonos (prueba)",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:07:30.918Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x04dbb4f85512f4c0948f02ed62e8412eecb47106e99473d8b0c62ff796a692b4",
+   "permiso": "Fondo co-op Q4 (prueba)",
+   "detalle": "1.5 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:07:38.322Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x56f08cd6f8e6c9ca31a7a2d92dd15a792a79c3d53bd0c1813bf76d9efc6c2eb7",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:12:06.851Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x435609f536e62de4a7c891d305b61e4c8d6296e5ceb4ff4562976de1d04ef3b9",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:12:49.468Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0xcd00cac6ea8e04b2f663d9fc8d8d26de95f0567a292a650c65be9263b2148721",
+   "permiso": "Reposición de audífonos (política: preguntar)",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:25:08.428Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x3c7e10c07a095cb00050b8d6500df44161c18d6d7500214f811c071b70bf2981",
+   "permiso": "Fondo co-op Q4 · Distribuidora Norte",
+   "detalle": "1.5 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:25:09.591Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0xc936d399ca969463565364b53b62371b9e2b67d409ebdc7a61cff5680dce185a",
+   "permiso": "Fondo co-op Q4 · Distribuidora Norte",
+   "detalle": "sobrante 150 USD",
+   "ts": "2026-10-10T03:37:43.514Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0xea3be0bc32180e4950b01c9eaab8f0e434979679bbd211e8a0fcf311a8be75dc",
+   "permiso": "Prueba de tienda (Linsoul)",
+   "detalle": "sobrante 88.01 USD",
+   "ts": "2026-10-10T03:37:44.895Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0xa3441349b5b050e704496decaa52b826895d5a1d05421d440cdeaa602cdc28ad",
+   "permiso": "Prueba A",
+   "detalle": "sobrante 80 USD",
+   "ts": "2026-10-10T03:37:46.556Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0x46bec533c2d686381799c1fb7b0a64482b06f5321a138b0814bebf40a37cf018",
+   "permiso": "Prueba B",
+   "detalle": "sobrante 60 USD",
+   "ts": "2026-10-10T03:37:48.151Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0xef625ca48981562ce52381f195392ddc3d487695a9bc27593bf51ae6a31f5145",
+   "permiso": "Prueba C",
+   "detalle": "sobrante 40 USD",
+   "ts": "2026-10-10T03:37:49.639Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0x7307c3381bb7366a01f2889e8e2fe911745f6e60e160489631cc621c128fdec8",
+   "permiso": "Reposición de audífonos (prueba)",
+   "detalle": "sobrante 120 USD",
+   "ts": "2026-10-10T03:37:50.748Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0xdf883caa82a2f6f2fed94eec074f0d47ac72c313223ab40797c26de8a6d8759e",
+   "permiso": "Fondo co-op Q4 (prueba)",
+   "detalle": "sobrante 150 USD",
+   "ts": "2026-10-10T03:37:51.936Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0x6e432280f4bf06d38f1c356be02dc32f74a7c91c008635d6f87a8fbe84dea3ff",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "sobrante 120 USD",
+   "ts": "2026-10-10T03:37:53.882Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0x847ea8e964716df8ab7ca794d52f596107f8d0fa277f532bf73dbb6189e6f88e",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "sobrante 120 USD",
+   "ts": "2026-10-10T03:37:55.404Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0xc643f8e5f7950055f5fbdab7168cd5df3215a30f553afef4ff9c568852415278",
+   "permiso": "Reposición de audífonos (política: preguntar)",
+   "detalle": "sobrante 120 USD",
+   "ts": "2026-10-10T03:37:56.980Z"
+  },
+  {
+   "tipo": "Cierre: sobrante devuelto",
+   "tx": "0x4a1507a4c2b83f5d9cf408d49bf9976d5cb67557440594455008316fbefc9291",
+   "permiso": "Fondo co-op Q4 · Distribuidora Norte",
+   "detalle": "sobrante 150 USD",
+   "ts": "2026-10-10T03:37:58.401Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x2228c83d6ad65a5f06aba6641460eedf60ea1262c19e3ae593d66873b8f363e3",
+   "permiso": "Fondo co-op Q4 · Distribuidora Norte",
+   "detalle": "10 USDC · 1 USD = 1 USDC",
+   "ts": "2026-10-10T03:39:44.870Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x2c264968a81dc08706f2c7f8eb75bef0cfa09df8a584935a888d109fb13a11f2",
+   "permiso": "Fondo co-op Q4 · Distribuidora Sur",
+   "detalle": "10 USDC · 1 USD = 1 USDC",
+   "ts": "2026-10-10T03:39:48.529Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x4e57597bc66394d120a4ae31d24f8850b3a64a549af0c24c22bab6aaea60682a",
+   "permiso": "Fondo co-op Q4 · Distribuidora Bajío",
+   "detalle": "10 USDC · 1 USD = 1 USDC",
+   "ts": "2026-10-10T03:40:03.313Z"
+  },
+  {
+   "tipo": "Liberación a la bóveda Kwal (sin manos)",
+   "tx": "0x946817b3d1fe4f9c2be84ab8484b547035f865c1ca4d28d0a8977be2f8bb878f",
+   "permiso": "Fondo co-op Q4 · Distribuidora Bajío",
+   "detalle": "0.79 USDC",
+   "ts": "2026-10-10T03:41:17.072Z"
+  },
+  {
+   "tipo": "Liberación a la bóveda Kwal (sin manos)",
+   "tx": "0x3ee6852b0e57f235f1e01577cdfd0d282c89a5dfaa3e3eb7f4295c5fec3188d8",
+   "permiso": "Fondo co-op Q4 · Distribuidora Sur",
+   "detalle": "0.76 USDC",
+   "ts": "2026-10-10T03:41:21.963Z"
+  },
+  {
+   "tipo": "Liberación a la bóveda Kwal (sin manos)",
+   "tx": "0xecab35c84f7bb9462903be1a0dc99d157d424fe840a4e7bfb45e3f97fd9f5820",
+   "permiso": "Fondo co-op Q4 · Distribuidora Norte",
+   "detalle": "8.67 USDC",
+   "ts": "2026-10-10T03:41:26.687Z"
+  },
+  {
+   "tipo": "Liberación a la bóveda Kwal (sin manos)",
+   "tx": "0xe436c7247b6c726d664aac0f89dd7214404d2f69572b134b36944331825ea01f",
+   "permiso": "Fondo co-op Q4 · Distribuidora Sur",
+   "detalle": "4.2 USDC",
+   "ts": "2026-10-10T03:49:03.591Z"
+  },
+  {
+   "tipo": "Liberación a la bóveda Kwal (sin manos)",
+   "tx": "0x5b2386cd5696917b02f1179129ecb1c11677a23e96e3a1805fbae4d624b95188",
+   "permiso": "Fondo co-op Q4 · Distribuidora Bajío",
+   "detalle": "3.95 USDC",
+   "ts": "2026-10-10T03:49:11.241Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0xc885ddb0beb07d153877fdcfc24dfd440b8731446e1a167e041e3090d05122f1",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:52:13.654Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x4389d21383186f607bda6855c22ea809ee00dec0e370eefaf611a51cfc8bdcfe",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:52:13.783Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0xfb3c8b260e53d08be68fbee6bda00464305ef827323f96d04266d4f99ad4cdc3",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:53:45.282Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0x6a7dcf032cca6b6e3003a60ac0b93439aa49f45d74c6f9064655037cfd9bba18",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T03:53:51.294Z"
+  },
+  {
+   "tipo": "Fondo bloqueado en el contrato",
+   "tx": "0xd529c78b94b100cc382f14fbb64899f0d3dbf9b9dfcfae501946aa15fd96c414",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "1.2 USDC · 1 USD = 0.01 USDC",
+   "ts": "2026-10-10T04:00:26.174Z"
+  },
+  {
+   "tipo": "Liberación exacta al completarse la compra",
+   "tx": "0xf4d143e77b64705c5c2878106586156c32ae1faa2d6ccd446f7507d6b72148e0",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "31.99 USD",
+   "ts": "2026-10-10T04:01:27.615Z"
+  },
+  {
+   "tipo": "Recibo registrado en la cadena",
+   "tx": "0x3f2e8822b372e406c8532d3fa38dcdcc2459ff401099aa1ebe4d994052b3e083",
+   "permiso": "Reposición de audífonos robados",
+   "detalle": "huella 0xb960f39efedae41d…",
+   "ts": "2026-10-10T04:01:29.003Z"
+  }
+ ],
+ "decisiones": [
+  {
+   "fecha": "2026-10-10T03:04:59.773Z",
+   "decision": "aprobar",
+   "razon": "La diferencia de precio está dentro del margen automático del 20% y cumple con ser la opción más barata en una categoría permitida.",
+   "confianza": 0.98
+  },
+  {
+   "fecha": "2026-10-10T04:21:49.631Z",
+   "decision": "aprobar",
+   "razon": "Cabe dentro del margen del 20% (9.99 ≤ 24) y cumple ser la más barata, categoría permitida y no ser upgrade.",
+   "confianza": 0.95
+  }
+ ],
+ "bloqueos": [
+  {
+   "fecha": "2026-10-10T03:03:59.606Z",
+   "razones": [
+    "cuesta 95.99 y el saldo es 60; ni con aprobación pasa de 90"
+   ]
+  },
+  {
+   "fecha": "2026-10-10T04:35:37.380Z",
+   "razones": [
+    "deathwishcoffee.com: White Chocolate Pistachio Coffee rechazado por la regla (tienda y categoría no permitidas)"
+   ]
+  }
+ ]
+}

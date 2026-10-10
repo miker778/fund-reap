@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Permiso · Proof</title>
+<style>
+:root{--t:#14161a;--s:#5b6170;--l:#e4e6eb;--f:#f5f6f4;--ok:#1d6b4f;--okf:#e4f3ec;--ac:#1d6b4f}
+*{box-sizing:border-box}body{margin:0;font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--t);background:var(--f)}
+header{background:#fff;border-bottom:1px solid var(--l);padding:1rem 1.5rem;display:flex;gap:.6rem;align-items:center}
+.logo{width:26px;height:26px;border-radius:6px;background:var(--ac);color:#fff;display:grid;place-items:center;font-weight:700}
+main{max-width:1080px;margin:0 auto;padding:1.5rem}h1{font-size:28px;margin:.3rem 0}h2{font-size:18px;margin:2rem 0 .6rem}
+.muted{color:var(--s);font-size:13px}.card{background:#fff;border:1px solid var(--l);border-radius:12px;padding:1rem}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem}.kp .v{font-size:26px;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:.5rem .4rem;border-bottom:1px solid var(--l);vertical-align:top}th{color:var(--s);font-weight:500;font-size:12px}
+code{font-size:12px;background:#eef0ee;padding:.05rem .3rem;border-radius:4px;word-break:break-all}a{color:var(--ac)}
+.pill{font-size:12px;border-radius:999px;padding:.1rem .5rem;background:var(--okf);color:var(--ok);font-weight:600}
+.nota{border-left:3px solid var(--ac);background:#fff;padding:.7rem 1rem;border-radius:6px}
+</style></head><body>
+<header><div class="logo">✓</div><b>Permiso</b><span class="muted">· proof of what ran on the night of the Reap x AIBM buildathon</span></header>
+<main>
+<div class="muted">Frozen snapshot. It does not call Reap, so it keeps working after the sandbox key expires. Every transaction below is public and permanent on Ink Sepolia.</div>
+<h1>What actually happened</h1>
+<div class="nota">The funder authorizes once (the rule). Purchases run through Reap Agentic checkout, or are paid hands-free from a distributor's Kwal vault after our contract releases exactly the purchase amount. Contract: <a id="contrato" target="_blank"></a> on <span id="red"></span>.</div>
+<h2>Summary</h2><div class="kp" id="kpis"></div>
+<h2>Completed purchases</h2>
+<div class="card"><table><thead><tr><th>When (UTC)</th><th>Permission</th><th>Product</th><th>Amount</th><th>Paid via</th><th>Order</th><th>Receipt</th></tr></thead><tbody id="compras"></tbody></table></div>
+<h2>Distributors (brand funds, one Kwal vault each)</h2>
+<div class="card"><table><thead><tr><th>Distributor</th><th>Fund</th><th>Vault</th><th>Funding tx</th><th>Purchases</th></tr></thead><tbody id="dist"></tbody></table>
+<p class="muted">Distribuidora Norte's second purchase was refused by the contract itself (custom error <code>PasaDelTope(saldo 1.33, monto 4.23)</code>): its cap was already used, so the chain would not release more. A refused call reverts before it is mined, so it has no transaction hash.</p></div>
+<h2>Every transaction on the chain</h2>
+<div class="card"><table><thead><tr><th>When (UTC)</th><th>What</th><th>Permission</th><th>Detail</th><th>Tx</th></tr></thead><tbody id="txs"></tbody></table></div>
+<h2>Blocked by the rules</h2>
+<div class="card"><table><thead><tr><th>When (UTC)</th><th>Why</th></tr></thead><tbody id="blq"></tbody></table></div>
+<h2>Policy decisions</h2>
+<div class="card"><table><thead><tr><th>When (UTC)</th><th>Decision</th><th>Reason</th></tr></thead><tbody id="dec"></tbody></table></div>
+<h2>Verify it yourself</h2>
+<div class="card"><p>Open the contract on the explorer, read <code>permisos(id)</code> or the events <code>Creado</code>, <code>Autorizado</code>, <code>Recibo</code>, <code>Cerrado</code>. Code and replay mode: <a href="https://github.com/miker778/fund-reap" target="_blank">github.com/miker778/fund-reap</a> (<code>npm run demo</code> runs the API, the MCP with four doors and the dashboards locally, from recorded sandbox responses).</p></div>
+<p class="muted" id="gen"></p>
+</main>
+<script>
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+fetch('prueba.json').then(r=>r.json()).then(d=>{
+ const X=d.explorador;const tx=h=>h?'<a target="_blank" href="'+X+'/tx/'+esc(h)+'"><code>'+esc(h.slice(0,10))+'…</code></a>':'';
+ const a=document.getElementById('contrato');a.href=X+'/address/'+d.contrato;a.textContent=d.contrato;document.getElementById('red').textContent=d.red;
+ const r=d.resumen;document.getElementById('kpis').innerHTML=[['Permissions created',r.permisos],['Purchases completed',r.comprasCompletadas],['Via Reap checkout',r.viaReap],['Hands-free via Kwal',r.viaKwal],['Transactions on chain',r.transaccionesEnCadena],['Policy decisions',r.decisionesDePolitica]].map(([l,v])=>'<div class="card"><div class="v">'+v+'</div><div class="muted">'+l+'</div></div>').join('');
+ document.getElementById('compras').innerHTML=d.completadas.map(c=>'<tr><td class="muted">'+esc((c.fecha||'').replace('T',' ').slice(0,19))+'</td><td>'+esc(c.permiso)+'<div class="muted">'+esc(c.financiador)+'</div></td><td>'+esc(c.producto||'')+'<div class="muted">'+esc(c.tienda||'')+'</div></td><td>'+esc(c.monto)+' '+esc(c.moneda)+'</td><td><span class="pill">'+esc(c.via)+'</span></td><td><code>'+esc(c.orden||'—')+'</code></td><td>'+(c.reciboHash?'<code>'+esc(c.reciboHash.slice(0,12))+'…</code> ':'')+tx(c.tx)+'</td></tr>').join('');
+ document.getElementById('dist').innerHTML=d.distribuidores.map(x=>'<tr><td><b>'+esc(x.socio)+'</b></td><td>'+esc(x.tope)+' USD</td><td>'+(x.boveda?'<a target="_blank" href="'+X+'/address/'+esc(x.boveda)+'"><code>'+esc(x.boveda.slice(0,10))+'…</code></a>':'')+'</td><td>'+tx(x.txFondeo)+'</td><td>'+x.compras.map(c=>esc(c.producto||'')+' '+esc(c.monto)+' · '+esc(c.estado==='COMPLETED'?'paid by the vault':c.estado==='FAILED'?'not completed, not charged':c.estado)+' '+tx(c.tx)).join('<br>')+'</td></tr>').join('');
+ document.getElementById('txs').innerHTML=d.transacciones.map(t=>'<tr><td class="muted">'+esc((t.ts||'').replace('T',' ').slice(0,19))+'</td><td>'+esc(t.tipo)+'</td><td>'+esc(t.permiso)+'</td><td class="muted">'+esc(t.detalle)+'</td><td>'+tx(t.tx)+'</td></tr>').join('');
+ document.getElementById('dec').innerHTML=d.decisiones.map(x=>'<tr><td class="muted">'+esc((x.fecha||'').replace('T',' ').slice(0,19))+'</td><td><b>'+esc(x.decision)+'</b></td><td>'+esc(x.razon)+'</td></tr>').join('')||'<tr><td colspan="3" class="muted">None</td></tr>';
+ document.getElementById('blq').innerHTML=(d.bloqueos||[]).map(x=>'<tr><td class="muted">'+esc((x.fecha||'').replace('T',' ').slice(0,19))+'</td><td>'+esc((x.razones||[]).join('; '))+'</td></tr>').join('')||'<tr><td colspan="2" class="muted">None</td></tr>';
+ document.getElementById('gen').textContent='Snapshot generated '+d.generado;
+});
+</script>
+</body></html>

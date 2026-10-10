@@ -1,0 +1,9 @@
+{
+  "name": "permiso-whatsapp-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal WhatsApp bridge for Permiso: holds a WhatsApp session (Baileys) and forwards messages to the agent.",
+  "scripts": { "start": "node index.mjs" },
+  "dependencies": { "baileys": "^6.7.18", "qrcode-terminal": "^0.12.0", "pino": "^9.0.0" }
+}

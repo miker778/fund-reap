@@ -1,0 +1,26 @@
+{
+  "name": "permiso",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --import tsx src/index.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "demo": "REPLAY=1 PUBLIC_URL=http://127.0.0.1:3066 FUNDER_TOKEN=demo ACCESS_CODE=demo DEMO_ENROLLMENT_ID=replay DATA_DIR=./data-demo PORT=3066 tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "express": "^5.3.0",
+    "viem": "^2.57.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "solc": "^0.8.28",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "description": "Funded permissions for agent spending: one party funds a rule, another party's agent spends inside it."
+}
