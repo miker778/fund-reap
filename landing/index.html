@@ -501,12 +501,12 @@
 <section class="scene alt" id="escena-6" data-seconds="20">
   <div class="wrap try">
     <div>
-      <h2><span class="es">Pruébalo desde tu propio asistente.</span><span class="en">Try it from your own assistant.</span></h2>
-      <p class="sub"><span class="es">Agrega Permiso como conector en Claude o ChatGPT y entra por una de cuatro puertas. Código de acceso en la entrega.</span><span class="en">Add Permiso as a connector in Claude or ChatGPT and enter through one of four doors. Access code in the submission.</span></p>
+      <h2><span class="es">Córrelo tú, sin llaves.</span><span class="en">Run it yourself, no keys needed.</span></h2>
+      <p class="sub"><span class="es">El repo trae el agente completo: API, el servidor MCP con OAuth y cuatro puertas, las reglas, el contrato y un puente de WhatsApp. <code>npm run demo</code> lo levanta en tu máquina con Reap y Kwal simulados; conecta el MCP local a Claude o ChatGPT con el código <code>demo</code>.</span><span class="en">The repo has the whole agent: the API, the MCP server with OAuth and four doors, the rules, the contract and a WhatsApp bridge. <code>npm run demo</code> starts it on your machine with Reap and Kwal simulated; connect the local MCP to Claude or ChatGPT with the code <code>demo</code>.</span></p>
       <div class="doors">
         <span><span class="es">Aseguradora</span><span class="en">Insurer</span></span><span><span class="es">Cliente de la aseguradora</span><span class="en">Insurer's customer</span></span><span><span class="es">Marca</span><span class="en">Brand</span></span><span><span class="es">Distribuidor</span><span class="en">Distributor</span></span>
       </div>
-      <div class="url"><span>https://permiso.nostris.dev/mcp</span><button type="button" id="copy"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+      <div class="url"><span>git clone https://github.com/miker778/fund-reap &amp;&amp; npm install &amp;&amp; npm run demo</span><button type="button" id="copy"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
     </div>
     <div>
       <p class="body" style="font-size:1rem"><span class="es">Hecho con</span><span class="en">Built with</span></p>
@@ -661,7 +661,7 @@
 
   /* Copy MCP URL */
   document.getElementById('copy').addEventListener('click', e => {
-    if (navigator.clipboard) navigator.clipboard.writeText('https://permiso.nostris.dev/mcp');
+    if (navigator.clipboard) navigator.clipboard.writeText('git clone https://github.com/miker778/fund-reap && cd fund-reap && npm install && npm run demo');
     const b = e.currentTarget; b.querySelector('.es').textContent = 'Copiado'; b.querySelector('.en').textContent = 'Copied';
   });
 

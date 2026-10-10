@@ -54,7 +54,7 @@ Pricing: per purchase settled, or a percentage of funds managed. No setup fee.
 
 ## Four doors
 
-Add `https://permiso.nostris.dev/mcp` as a custom connector in Claude or ChatGPT. The authorization page asks for the access code (in the hackathon submission) and which door:
+Run `npm run demo`, then add `http://127.0.0.1:3066/mcp` (or a public tunnel to it) as a custom connector in Claude or ChatGPT. The authorization page asks for the access code (`demo` in replay mode) and which door:
 
 | Door | What you get |
 |---|---|
